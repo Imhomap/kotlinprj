@@ -45,7 +45,7 @@ object WorkShop01 {
         println(resultEqual)
 
 
-    }
+  //  }
 
     //TODO 4. Написать функцию (compareTwoStrings), которая принимает на вход две строки и возвращает результат сравнения
     //Проверить функцию можно с помощью тестов, которые лежат в директории test/java (Имя класса - WorkShop01P4Test)
@@ -58,7 +58,7 @@ object WorkShop01 {
         str1: Boolean
 */
 
-    }
+ //   }
 
     fun compareTwoStrings(str1: String, str2: String): Boolean = str1 != str2
 
@@ -115,3 +115,5 @@ fun main(args: Array<String>) {
     //TODO 3.4 - Расскомметировать функцию ниже, чтобы увидеть результат
     WorkShop01.printRealTwoPrecisionValue()
 }
+
+ww

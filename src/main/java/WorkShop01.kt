@@ -58,7 +58,7 @@ object WorkShop01 {
         str1: Boolean
 */
 
-    }
+ //   }
 
     fun compareTwoStrings(str1: String, str2: String): Boolean = str1 != str2
 
@@ -115,3 +115,5 @@ fun main(args: Array<String>) {
     //TODO 3.4 - Расскомметировать функцию ниже, чтобы увидеть результат
     WorkShop01.printRealTwoPrecisionValue()
 }
+
+ww

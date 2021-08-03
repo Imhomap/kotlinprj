@@ -45,20 +45,12 @@ object WorkShop01 {
         println(resultEqual)
 
 
-  //  }
+   }
 
     //TODO 4. Написать функцию (compareTwoStrings), которая принимает на вход две строки и возвращает результат сравнения
-    //Проверить функцию можно с помощью тестов, которые лежат в директории test/java (Имя класса - WorkShop01P4Test)
-/*
-    fun compareTwoStrings() {
-        val str1: String
-        str1 = ""
-        val str2: String
-        str2 = ""
-        str1: Boolean
-*/
 
- //   }
+
+
 
     fun compareTwoStrings(str1: String, str2: String): Boolean = str1 != str2
 
@@ -71,8 +63,13 @@ object WorkShop01 {
     // /
     // Для проверки задания необходимо запустить тесты в классе WorkShop01P5Test
     fun evenOddNumber(number: Int) {
-        TODO()
-    }
+       if (number % 2 == 0) {
+           "Чётное"
+       }else{
+           "Нечётное"
+       }
+       }
+
 
     //TODO 6. Необходимо реализовать лямбда-функцию и задать ей имя lambda, которая
     // 1. Принимает два значения типа Int и возвращает значение типа Int
@@ -116,4 +113,3 @@ fun main(args: Array<String>) {
     WorkShop01.printRealTwoPrecisionValue()
 }
 
-ww

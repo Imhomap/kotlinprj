@@ -1,3 +1,5 @@
+import kotlin.math.max
+
 object WorkShop01 {
 
     fun numericValues() {
@@ -52,7 +54,7 @@ object WorkShop01 {
 
 
 
-    fun compareTwoStrings(str1: String, str2: String): Boolean = str1 != str2
+    fun compareTwoStrings(str1: String, str2: String): Boolean = str1 < str2
 
     //TODO 5. Написать функцию, которая
     // 1. Принимает на вход число типа Int
@@ -62,12 +64,12 @@ object WorkShop01 {
     // PS2. Оператор, который определяет остаток от деления - %
     // /
     // Для проверки задания необходимо запустить тесты в классе WorkShop01P5Test
-    fun evenOddNumber(number: Int) {
-       if (number % 2 == 0) {
-           "Чётное"
-       }else{
-           "Нечётное"
-       }
+    fun evenOddNumber(number: Int): String {
+        return if (number % 2 == 0) {
+            "Чётное"
+        } else {
+            "Нечётное"
+        }
        }
 
 
@@ -75,13 +77,27 @@ object WorkShop01 {
     // 1. Принимает два значения типа Int и возвращает значение типа Int
     // 2. Результат выполнения лямбда-функции - сравнить два значения и вернуть максимальное из 2-х
     // Для проверки задания необходимо запустить тесты в классе WorkShop01P6Test
-    //val lambda: TODO()
+//    val lambda = {param1: Int, param2: Int ->
+//        if (param1 > param2){
+//            param1
+//
+//        }else {
+//            param2
+//        }
+//
+//    }
+    val lambda: (Int, Int) -> Int = {param1, param2 -> max(param1, param2)}
+
+
 
     // TODO 7. Необходимо реализовать функцию высшего порядка c именем compareTwoInts, которая
     //  1. Принимает на вход два числа и лямбда-функцию
     //  2. Возвращает результат исполнения лямбда-функции, в которую должны быть переданы два числа,
     //  которые функция высшего порядка получила на вход
     //  Для проверки задания необходимо запустить тесты в классе WorkShop01P7Test
+
+    fun compareTwoInts(param1:Int, param2: Int, func: (Int, Int) -> Boolean) = func(param1, param2)
+
 
     // TODO 8. Необходимо реализовать функцию, которая возвращает информацию о том, в каком интервале находится переданное число
     //  Дано 4 интервала (квадратная скоба обозначает включение значения в интервал, круглая - исключение значения из интервала):
@@ -101,7 +117,7 @@ object WorkShop01 {
     //  /
     //  Для проверки задания необходимо запустить тесты в классе WorkShop01P8Test
     fun checkNumInRange(num: Int): String {
-        TODO()
+
     }
 }
 
